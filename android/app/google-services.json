@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "252474183650",
+    "firebase_url": "https://gizikucom.firebaseio.com",
+    "project_id": "gizikucom",
+    "storage_bucket": "gizikucom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252474183650:android:d8efff6982bbf189",
+        "android_client_info": {
+          "package_name": "com.giziku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252474183650-oc9idqm7pgod0p6j4uhnesad2h5i2nhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQvWfwGKQZKW1j2u8lh3QOwm4Q9vmta3I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
