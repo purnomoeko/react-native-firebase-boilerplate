@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "252474183650",
-    "firebase_url": "https://gizikucom.firebaseio.com",
-    "project_id": "gizikucom",
-    "storage_bucket": "gizikucom.appspot.com"
+    "project_number": "250967264062",
+    "firebase_url": "https://livvz-mobile-project.firebaseio.com",
+    "project_id": "livvz-mobile-project",
+    "storage_bucket": "livvz-mobile-project.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:252474183650:android:d8efff6982bbf189",
+        "mobilesdk_app_id": "1:250967264062:android:bf340e6aff7368a0",
         "android_client_info": {
-          "package_name": "com.giziku"
+          "package_name": "com.interaktiv.livvz"
         }
       },
       "oauth_client": [
         {
-          "client_id": "252474183650-oc9idqm7pgod0p6j4uhnesad2h5i2nhu.apps.googleusercontent.com",
+          "client_id": "250967264062-2vfm1qi3qf4g47kaqvg7ddmmbnd6qfb8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQvWfwGKQZKW1j2u8lh3QOwm4Q9vmta3I"
+          "current_key": "AIzaSyBLj9GpAkkrx54FFAY_F3BSp25gGMM0sPc"
         }
       ],
       "services": {
