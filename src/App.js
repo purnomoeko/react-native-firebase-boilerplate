@@ -5,16 +5,19 @@ import {
     View,
     Text,
 } from 'react-native';
-import { Provider } from 'react-redux';
+import { Provider, connect } from 'react-redux';
 import {
     Router,
-    Stack,
     Scene,
+    ActionConst,
 } from 'react-native-router-flux';
 import { persistStore } from 'redux-persist';
+import { Root } from 'native-base';
 import Welcome from './components/Welcome';
+import SignupStep1 from './components/Signup/Step1';
 import configureStore from './configureStore';
 
+const RouterWithRedux = connect()(Router);
 
 export default class App extends Component {
     constructor(props) {
@@ -47,11 +50,14 @@ export default class App extends Component {
         }
         return (
             <Provider store={this.state.store}>
-                <Router>
-                    <Stack key="root" hideNavBar>
-                        <Scene key="welcome" component={Welcome} />
-                    </Stack>
-                </Router>
+                <Root>
+                    <RouterWithRedux key="root">
+                        <Scene key="root1" hideNavBar>
+                            <Scene key="welcome" component={Welcome} />
+                            <Scene key="signupStep1" component={SignupStep1} />
+                        </Scene>
+                    </RouterWithRedux>
+                </Root>
             </Provider>
         );
     }
