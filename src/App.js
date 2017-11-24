@@ -14,7 +14,7 @@ import {
 import { persistStore } from 'redux-persist';
 import { Root } from 'native-base';
 import Welcome from './components/Welcome';
-import SignupStep1 from './components/Signup/Step1';
+import { Step1, Step2 } from './components/Signup';
 import configureStore from './configureStore';
 
 const RouterWithRedux = connect()(Router);
@@ -54,7 +54,8 @@ export default class App extends Component {
                     <RouterWithRedux key="root">
                         <Scene key="root1" hideNavBar>
                             <Scene key="welcome" component={Welcome} />
-                            <Scene key="signupStep1" component={SignupStep1} />
+                            <Scene key="signupStep1" component={Step1} />
+                            <Scene key="signupStep2" component={Step2} />
                         </Scene>
                     </RouterWithRedux>
                 </Root>

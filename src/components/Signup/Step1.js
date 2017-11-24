@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Container, Content, Button, Icon } from 'native-base';
 import { TextInput, View, Text, TouchableOpacity } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import Header from '../Common/Header';
 import globalStyles from '../../static/style';
 
@@ -24,6 +25,10 @@ class Step1 extends Component {
         };
     }
 
+    signup() {
+        Actions.signupStep2();
+    }
+
     render() {
         return (
             <Container style={{ backgroundColor: '#CADFCB' }}>
@@ -43,7 +48,7 @@ class Step1 extends Component {
                     </View>
 
                     <View style={[globalStyles.flex1, { marginTop: 25 }]}>
-                        <Button block style={{ backgroundColor: '#4CD964' }}>
+                        <Button block style={{ backgroundColor: '#4CD964' }} onPress={this.signup}>
                             <Text style={[globalStyles.lato, { fontSize: 14 }]}>Sign Up</Text>
                         </Button>
                     </View>
@@ -55,7 +60,7 @@ class Step1 extends Component {
                             <View style={globalStyles.iconContainer}>
                                 <Icon name="logo-facebook" style={{ color: '#fff' }} />
                             </View>
-                            <Text style={[ globalStyles.buttonSquareText ]}> Facebook </Text>
+                            <Text style={[globalStyles.buttonSquareText]}> Facebook </Text>
                         </TouchableOpacity>
                     </View>
                     <View>
@@ -70,6 +75,6 @@ class Step1 extends Component {
             </Container>
         );
     }
-} 
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Step1);
