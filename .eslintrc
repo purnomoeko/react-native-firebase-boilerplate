@@ -6,6 +6,7 @@
     }
   },
   "rules": {
+    "class-methods-use-this" : "off",
     "max-len": [
       "warn",
       160

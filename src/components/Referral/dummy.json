@@ -1,0 +1,24 @@
+[{
+    "FullName": "Eko Purnomo",
+    "Email" : "eko.purnomo@icloud.com",
+    "PhoneNumber": "+6285213230818",
+    "Type" : "Seller",
+    "Id": "11",
+    "Status": "Waiting"
+},
+{
+    "FullName": "Joko Widodo",
+    "Email": "president@indonesia.gov.id",
+    "PhoneNumber": "+62852111111111",
+    "Type": "Buyer",
+    "Id": "12",
+    "Status": "Registered"
+},
+{
+    "FullName": "Tri Hariyanto",
+    "Email": "tri@nusa.id",
+    "PhoneNumber": "+628512312939129",
+    "Type": "Seller",
+    "Id": "13",
+    "Status": "Rewarded"
+}]

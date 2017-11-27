@@ -15,6 +15,9 @@ import { persistStore } from 'redux-persist';
 import { Root } from 'native-base';
 import Welcome from './components/Welcome';
 import { Step1, Step2 } from './components/Signup';
+import { ListReferral, NewReferral } from './components/Referral';
+import Login from './components/Login';
+import Drawer from './components/Common/Drawer';
 import configureStore from './configureStore';
 
 const RouterWithRedux = connect()(Router);
@@ -53,9 +56,15 @@ export default class App extends Component {
                 <Root>
                     <RouterWithRedux key="root">
                         <Scene key="root1" hideNavBar>
-                            <Scene key="welcome" component={Welcome} />
+                            <Scene key="welcome" component={Welcome} initial />
+                            <Scene key="login" component={Login} />
                             <Scene key="signupStep1" component={Step1} />
                             <Scene key="signupStep2" component={Step2} />
+                            <Scene key="afterLogin" component={Drawer} initial>
+                                <Scene key="listReferral" component={ListReferral} type={ActionConst.REPLACE} />
+                            </Scene>
+                            <Scene key="newReferral" component={NewReferral} />
+                            
                         </Scene>
                     </RouterWithRedux>
                 </Root>

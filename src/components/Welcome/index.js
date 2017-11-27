@@ -102,7 +102,7 @@ export default class Welcome extends React.Component {
                         <Icon name="ios-create" />
                         <Text style={[ globalStyles.lato, { color: '#222' }]}> Signup</Text>
                     </Button>
-                    <Button iconLeft bordered success block style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', borderColor: '#4CD964' }} >
+                    <Button iconLeft bordered success block style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', borderColor: '#4CD964' }} onPress={() => Actions.login()} >
                         <Icon name="ios-log-in-outline" />
                         <Text style={[globalStyles.lato, { color: '#222' }]}> Login</Text>
                     </Button>
